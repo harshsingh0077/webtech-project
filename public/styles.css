@@ -1,0 +1,343 @@
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+header h1{
+    text-align: center;
+    padding: 14px 10px;
+    background-color: #6d6d6d;
+    border-radius: 20px;
+}
+header h2{  
+    text-align: center;
+    padding: 14px 10px;
+    background-color: #6d6d6d;
+    border-radius: 20px;
+}
+header:hover{
+    color: #ffd700;
+}
+nav ul {
+    list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #6d6d6d;
+            border-radius: 10px;
+}
+
+nav ul li {
+    float:left;
+            font-family:"Comic Sans MS";
+}
+
+nav ul li a {
+    display:inline-block;
+    color: white;
+      text-align: center;
+      padding: 14px 10px;
+      text-decoration: none;
+      cursor:pointer;
+      transition: transform .2s;
+      font: size 20px;
+}
+
+nav ul li a:hover {
+    color: #ffd700; 
+    background-color: #111;
+    border-radius: 8px;
+    transform: scale(0.8);
+}
+
+.sec {
+    background-color: #f4f4f4;
+    padding: 50px;
+    text-align: center;
+    
+}
+
+.sec {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* Example background color with transparency */
+    margin-top: 20px;
+}
+
+.sec h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.ccontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 100px auto;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-container {
+    display: flex;
+}
+.card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    margin: 20px;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.7); 
+    padding: 20px;
+}
+
+
+
+
+.card img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.card-content p {
+    margin-bottom: 0;
+    color: #666;
+}
+
+.card:hover{
+    transform: translateY(-20px);
+}
+
+.service-link {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.service-link:hover {
+    color: inherit; 
+}
+
+.services {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.service {
+    width: 300px;
+    background-color: #f4d528;
+    border-radius: 5px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+}
+
+.service h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service p {
+    color: #666;
+}
+
+footer.center {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.features {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.feature {
+    width: 300px;
+    background-color: #f4d528;
+    border-radius: 5px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    
+}
+
+.feature h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    color: #666;
+}
+
+.login,
+.signup {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.login h2,
+.signup h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.login {
+    width: 300px;
+    margin: 100px auto; 
+    background-color: #f9f9f9a5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.login h2 {
+    color: #333;
+}
+
+.login input[type="text"],
+.login input[type="password"],
+.login button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+    background-color: #ffffff86;
+}
+
+.login button {
+    background-color: #ffc107; 
+    color: #333;
+    cursor: pointer;
+}
+
+.login button:hover {
+    background-color: #ffca28; 
+}
+
+
+
+.signup {
+    width: 300px;
+    margin: 100px auto; 
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.signup h2 {
+    color: #333;
+}
+
+.signup input[type="text"],
+.signup input[type="email"],
+.signup input[type="password"],
+.signup button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.signup input[type="text"],
+.signup input[type="email"],
+.signup input[type="password"] {
+    background-color: #fff;
+}
+
+.signup button {
+    background-color: #ffc107; 
+    color: #333;
+    cursor: pointer;
+}
+
+.signup button:hover {
+    background-color: #ffca28; 
+}
+
+
+
+#video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    opacity: 2.0; /* Adjust the opacity as needed */
+}
+
+
+
+
